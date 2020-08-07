@@ -1,6 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="399192f9-ba2d-4eee-88e5-e6cfbfbf06ee" name="Default Changelist" comment="I changed the drawBoard function to a class">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tic_Tac_Toe.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tic_Tac_Toe.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fmauwWXcwIWcACuTWeHRKgEzb4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Tic_Tac_Toe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Final_Project" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/PycharmProjects/Final_Project/venv/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Tic_Tac_Toe.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Tic_Tac_Toe" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="399192f9-ba2d-4eee-88e5-e6cfbfbf06ee" name="Default Changelist" comment="I changed the drawBoard function to a class" />
+      <created>1596825947689</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596825947689</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="I changed the drawBoard function to a class" />
+    <option name="LAST_COMMIT_MESSAGE" value="I changed the drawBoard function to a class" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="395" y="37" key="#Tic_Tac_Toe" timestamp="1596824594161">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state x="395" y="37" key="#Tic_Tac_Toe/0.23.1440.829/-324.-1057.1920.1057@0.23.1440.829" timestamp="1596824594161" />
+    <state width="1218" height="188" key="GridCell.Tab.0.bottom" timestamp="1596828534884">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1218" height="188" key="GridCell.Tab.0.bottom/0.23.1440.829/-324.-1057.1920.1057@0.23.1440.829" timestamp="1596828534884" />
+    <state width="1218" height="188" key="GridCell.Tab.0.center" timestamp="1596828534883">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1218" height="188" key="GridCell.Tab.0.center/0.23.1440.829/-324.-1057.1920.1057@0.23.1440.829" timestamp="1596828534883" />
+    <state width="1218" height="188" key="GridCell.Tab.0.left" timestamp="1596828534883">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1218" height="188" key="GridCell.Tab.0.left/0.23.1440.829/-324.-1057.1920.1057@0.23.1440.829" timestamp="1596828534883" />
+    <state width="1218" height="188" key="GridCell.Tab.0.right" timestamp="1596828534884">
+      <screen x="0" y="23" width="1440" height="829" />
+    </state>
+    <state width="1218" height="188" key="GridCell.Tab.0.right/0.23.1440.829/-324.-1057.1920.1057@0.23.1440.829" timestamp="1596828534884" />
   </component>
 </project>
