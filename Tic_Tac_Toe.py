@@ -1,4 +1,4 @@
-# Tic Tac Toe code
+# Tic Tac Toe
 
 import random
 
@@ -39,28 +39,21 @@ class Game_Board:
         # Return true if the passed move is free on the passed board.
         return self.board[move] == ' '
 
-    def getPlayerMove1(self):
+    def getPlayerMove(self):
         # Let the player type in his move.
         move = ' '
-        while move not in '1 2 3 4 5 6 7 8 9'.split() or not isSpaceFree(self.board, int(move)):
+        while move not in '1 2 3 4 5 6 7 8 9'.split() or not self.isSpaceFree(int(move)):
             print('What is your next move? (1-9)')
             move = input()
         return int(move)
 
-    def getPlayerMove2(self):
-        # Let the player type in his move.
-        move = ' '
-        while move not in '1 2 3 4 5 6 7 8 9'.split() or not isSpaceFree(self.board, int(move)):
-            print('What is your next move? (1-9)')
-            move = input()
-        return int(move)
 
     def chooseRandomMoveFromList(self, movesList):
         # Returns a valid move from the passed list on the passed board.
         # Returns None if there is no valid move.
         possibleMoves = []
         for i in movesList:
-            if self.isSpaceFree(self.board, i):
+            if self.isSpaceFree( i):
                 possibleMoves.append(i)
 
         if len(possibleMoves) != 0:
@@ -71,7 +64,7 @@ class Game_Board:
     def isBoardFull(self):
         # Return True if every space on the board has been taken. Otherwise return False.
         for i in range(1, 10):
-            if self.isSpaceFree(self.board, i):
+            if self.isSpaceFree( i):
                 return False
         return True
 
@@ -97,7 +90,7 @@ class PlayerMoves:
         # Returns a list with the player's letter as the first item, and the computer's letter as the second.
         letter = ''
         while not (letter == 'X' or letter == 'O'):
-            print('Do you want to be X or O?')
+            print('Player 1, do you want to be X or O?')
             letter = input().upper()
 
         # the first element in the tuple is the player's letter, the second is the computer's letter.
@@ -113,11 +106,6 @@ class PlayerMoves:
         else:
             return 'player2'
 
-class Winner:
-    def playAgain(self):
-        # This function returns True if the player wants to play again, otherwise it returns False.
-        print('Do you want to play again? (yes or no)')
-        return input().lower().startswith('y')
 
 
 
@@ -128,7 +116,6 @@ while True:
     # Reset the board
     gb = Game_Board()
     dec = PlayerMoves()
-    win = Winner()
     playerletter1, playerletter2 = dec.inputPlayerLetter()
     PlayerLetters = {'player1':playerletter1, 'player2': playerletter2}
     currentPlayer = dec.whoGoesFirst()
@@ -138,7 +125,7 @@ while True:
 
 
     while gameIsPlaying:
-
+        print(currentPlayer + ' make your move')
         # Player's turn.
         gb.drawBoard()
         move = gb.getPlayerMove()
@@ -161,7 +148,7 @@ while True:
             currentPlayer = 'player1'
 
 
-
-
-    if not playAgain():
+    print('Do you want to play again? (yes or no)')
+    if not input().lower().startswith('y'):
         break
+
