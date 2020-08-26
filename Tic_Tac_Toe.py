@@ -75,9 +75,24 @@ class Game_Board:
                 return False
         return True
 
+    def isWinner(self, le):
+        bo = self.board
+        # Given a board and a player's letter, this function returns True if that player has won.
+        # We use bo instead of board and le instead of letter so we don't have to type as much.
+        return ((bo[7] == le and bo[8] == le and bo[9] == le) or  # across the top
+                (bo[4] == le and bo[5] == le and bo[6] == le) or  # across the middle
+                (bo[1] == le and bo[2] == le and bo[3] == le) or  # across the bottom
+                (bo[7] == le and bo[4] == le and bo[1] == le) or  # down the left side
+                (bo[8] == le and bo[5] == le and bo[2] == le) or  # down the middle
+                (bo[9] == le and bo[6] == le and bo[3] == le) or  # down the right side
+                (bo[7] == le and bo[5] == le and bo[3] == le) or  # diagonal
+                (bo[9] == le and bo[5] == le and bo[1] == le))  # diagonal
+
+
 class PlayerMoves:
 
-    def inputPlayerLetter1(self):
+    def inputPlayerLetter(self):
+
         # Lets the player type which letter they want to be.
         # Returns a list with the player's letter as the first item, and the computer's letter as the second.
         letter = ''
@@ -104,17 +119,7 @@ class Winner:
         print('Do you want to play again? (yes or no)')
         return input().lower().startswith('y')
 
-    def isWinner(self, bo, le):
-        # Given a board and a player's letter, this function returns True if that player has won.
-        # We use bo instead of board and le instead of letter so we don't have to type as much.
-        return ((bo[7] == le and bo[8] == le and bo[9] == le) or  # across the top
-                (bo[4] == le and bo[5] == le and bo[6] == le) or  # across the middle
-                (bo[1] == le and bo[2] == le and bo[3] == le) or  # across the bottom
-                (bo[7] == le and bo[4] == le and bo[1] == le) or  # down the left side
-                (bo[8] == le and bo[5] == le and bo[2] == le) or  # down the middle
-                (bo[9] == le and bo[6] == le and bo[3] == le) or  # down the right side
-                (bo[7] == le and bo[5] == le and bo[3] == le) or  # diagonal
-                (bo[9] == le and bo[5] == le and bo[1] == le))  # diagonal
+
 
 print('Welcome to Tic Tac Toe!')
 
@@ -124,48 +129,39 @@ while True:
     gb = Game_Board()
     dec = PlayerMoves()
     win = Winner()
-    playerletter1, playerletter2 = inputPlayerLetter()
-    turn = whoGoesFirst()
-    print('The ' + turn + ' will go first.')
+    playerletter1, playerletter2 = dec.inputPlayerLetter()
+    PlayerLetters = {'player1':playerletter1, 'player2': playerletter2}
+    currentPlayer = dec.whoGoesFirst()
+    print('The ' + currentPlayer + ' will go first.')
     gameIsPlaying = True
 
 
 
     while gameIsPlaying:
-        if turn == 'player1':
-            # Player's turn.
-            gb.drawBoard()
-            move = getPlayerMove(gb, dec, win)
-            makeMove(gb, dec, win, playerletter1, move)
 
-            if isWinner(gb, dec, playerletter1):
-                drawBoard(gb, dec, win)
-                print('Hooray! You have won the game!')
+        # Player's turn.
+        gb.drawBoard()
+        move = gb.getPlayerMove()
+        gb.makeMove(PlayerLetters[currentPlayer], move)
+
+        if gb.isWinner( playerletter1):
+            gb.drawBoard()
+            print('Hooray! You have won the game!')
+            gameIsPlaying = False
+        else:
+            if gb.isBoardFull():
+                gb.drawBoard()
+                print('The game is a tie!')
                 gameIsPlaying = False
-            else:
-                if isBoardFull(gb, dec, win):
-                    drawBoard(gb, dec, win)
-                    print('The game is a tie!')
-                    break
-                else:
-                    turn = 'player2'
+
+        if 'player1' == currentPlayer:
+            currentPlayer = 'player2'
 
         else:
-            # Computer's turn.
-            move = getComputerMove(gb, dec, win, playerletter2)
-            makeMove(gb, dec, win, playerletter2, move)
+            currentPlayer = 'player1'
 
-            if isWinner(gb, dec, win, playerletter2):
-                drawBoard(gb, dec, win)
-                print('The computer has beaten you! You lose.')
-                gameIsPlaying = False
-            else:
-                if isBoardFull(gb, dec, win):
-                    drawBoard(gb, dec, win)
-                    print('The game is a tie!')
-                    break
-                else:
-                    turn = 'player1'
+
+
 
     if not playAgain():
         break
