@@ -132,7 +132,7 @@ while True:
 
 
     while gameIsPlaying:
-        if turn == 'player':
+        if turn == 'player1':
             # Player's turn.
             gb.drawBoard()
             move = getPlayerMove(gb, dec, win)
@@ -148,7 +148,7 @@ while True:
                     print('The game is a tie!')
                     break
                 else:
-                    turn = 'computer'
+                    turn = 'player2'
 
         else:
             # Computer's turn.
@@ -165,7 +165,7 @@ while True:
                     print('The game is a tie!')
                     break
                 else:
-                    turn = 'player'
+                    turn = 'player1'
 
     if not playAgain():
         break
