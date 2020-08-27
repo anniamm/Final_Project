@@ -10,9 +10,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="399192f9-ba2d-4eee-88e5-e6cfbfbf06ee" name="Default Changelist" comment="i made some changes to make the codes work better -still needs some work">
+    <list default="true" id="399192f9-ba2d-4eee-88e5-e6cfbfbf06ee" name="Default Changelist" comment="code works">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tic_Tac_Toe.py" beforeDir="false" afterPath="$PROJECT_DIR$/Tic_Tac_Toe.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598479396237</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="code works">
+      <created>1598481642442</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598481642442</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -112,33 +118,38 @@
     <MESSAGE value="moved all the functions that require the game board into the class" />
     <MESSAGE value="committ" />
     <MESSAGE value="i made some changes to make the codes work better -still needs some work" />
-    <option name="LAST_COMMIT_MESSAGE" value="i made some changes to make the codes work better -still needs some work" />
+    <MESSAGE value="code works" />
+    <option name="LAST_COMMIT_MESSAGE" value="code works" />
   </component>
   <component name="WindowStateProjectService">
     <state x="395" y="37" key="#Tic_Tac_Toe" timestamp="1596824594161">
       <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state x="395" y="37" key="#Tic_Tac_Toe/0.23.1440.829/-324.-1057.1920.1057@0.23.1440.829" timestamp="1596824594161" />
-    <state width="1486" height="213" key="GridCell.Tab.0.bottom" timestamp="1598479411180">
-      <screen x="1440" y="-157" width="1920" height="1057" />
+    <state width="1419" height="442" key="GridCell.Tab.0.bottom" timestamp="1598488386901">
+      <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state width="1218" height="188" key="GridCell.Tab.0.bottom/0.23.1440.829/-324.-1057.1920.1057@0.23.1440.829" timestamp="1597274936303" />
-    <state width="1486" height="213" key="GridCell.Tab.0.bottom/0.23.1440.829/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1598479411180" />
-    <state width="1486" height="213" key="GridCell.Tab.0.center" timestamp="1598479411179">
-      <screen x="1440" y="-157" width="1920" height="1057" />
+    <state width="1419" height="442" key="GridCell.Tab.0.bottom/0.23.1440.829/1440.-157.1920.1057@0.23.1440.829" timestamp="1598488386901" />
+    <state width="1486" height="213" key="GridCell.Tab.0.bottom/0.23.1440.829/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1598481727967" />
+    <state width="1419" height="442" key="GridCell.Tab.0.center" timestamp="1598488386899">
+      <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state width="1218" height="188" key="GridCell.Tab.0.center/0.23.1440.829/-324.-1057.1920.1057@0.23.1440.829" timestamp="1597274936302" />
-    <state width="1486" height="213" key="GridCell.Tab.0.center/0.23.1440.829/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1598479411179" />
-    <state width="1486" height="213" key="GridCell.Tab.0.left" timestamp="1598479411179">
-      <screen x="1440" y="-157" width="1920" height="1057" />
+    <state width="1419" height="442" key="GridCell.Tab.0.center/0.23.1440.829/1440.-157.1920.1057@0.23.1440.829" timestamp="1598488386899" />
+    <state width="1486" height="213" key="GridCell.Tab.0.center/0.23.1440.829/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1598481727966" />
+    <state width="1419" height="442" key="GridCell.Tab.0.left" timestamp="1598488386899">
+      <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state width="1218" height="188" key="GridCell.Tab.0.left/0.23.1440.829/-324.-1057.1920.1057@0.23.1440.829" timestamp="1597274936301" />
-    <state width="1486" height="213" key="GridCell.Tab.0.left/0.23.1440.829/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1598479411179" />
-    <state width="1486" height="213" key="GridCell.Tab.0.right" timestamp="1598479411180">
-      <screen x="1440" y="-157" width="1920" height="1057" />
+    <state width="1419" height="442" key="GridCell.Tab.0.left/0.23.1440.829/1440.-157.1920.1057@0.23.1440.829" timestamp="1598488386899" />
+    <state width="1486" height="213" key="GridCell.Tab.0.left/0.23.1440.829/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1598481727965" />
+    <state width="1419" height="442" key="GridCell.Tab.0.right" timestamp="1598488386900">
+      <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state width="1218" height="188" key="GridCell.Tab.0.right/0.23.1440.829/-324.-1057.1920.1057@0.23.1440.829" timestamp="1597274936302" />
-    <state width="1486" height="213" key="GridCell.Tab.0.right/0.23.1440.829/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1598479411180" />
+    <state width="1419" height="442" key="GridCell.Tab.0.right/0.23.1440.829/1440.-157.1920.1057@0.23.1440.829" timestamp="1598488386900" />
+    <state width="1486" height="213" key="GridCell.Tab.0.right/0.23.1440.829/1440.-157.1920.1057@1440.-157.1920.1057" timestamp="1598481727966" />
     <state x="188" y="81" key="SettingsEditor" timestamp="1597274833404">
       <screen x="0" y="23" width="1440" height="829" />
     </state>

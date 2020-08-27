@@ -48,19 +48,6 @@ class Game_Board:
         return int(move)
 
 
-    def chooseRandomMoveFromList(self, movesList):
-        # Returns a valid move from the passed list on the passed board.
-        # Returns None if there is no valid move.
-        possibleMoves = []
-        for i in movesList:
-            if self.isSpaceFree( i):
-                possibleMoves.append(i)
-
-        if len(possibleMoves) != 0:
-            return random.choice(possibleMoves)
-        else:
-            return None
-
     def isBoardFull(self):
         # Return True if every space on the board has been taken. Otherwise return False.
         for i in range(1, 10):
